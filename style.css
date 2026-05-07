@@ -683,6 +683,17 @@ footer {
   }
 }
 
+@media (max-width: 480px) {
+  nav ul {
+    justify-content: center;
+    gap: 10px;               
+    padding: 0 10px;
+  }
+  nav a {
+    font-size: 0.85rem;      
+  }
+}
+
 .badge-style {
   background-color: #e0e7ff; 
   color: #4338ca;            
