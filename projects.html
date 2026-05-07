@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <title>Project Details | Ethan Ly</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body style="background: #ffffff;">
+
+<nav>
+  <div class="nav-container">
+    <div class="logo">
+      <a href="index.html#home" class="logo-link">Ethan Ly</a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="container" style="padding-top: 3rem; padding-bottom: 5rem;">
+  <a href="index.html#projects" class="btn-back"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+  
+  <header style="margin-top: 1rem;">
+    <span id="project-badge" class="badge-style"></span>
+    <h1 id="project-title" class="section-title"></h1>
+    <div id="project-tech-pills" class="tech-stack" style="margin-top: -1.5rem; margin-bottom: 2rem;"></div>
+  </header>
+
+  <div class="project-hero-container">
+    <img id="project-poster" src="" alt="project image" class="hero-poster">
+  </div>
+
+  <div class="project-summary-grid">
+    <div class="summary-box">
+      <h3><i class="fas fa-circle-info"></i> About the Project</h3>
+      <p id="project-desc"></p>
+    </div>
+    <div class="summary-box">
+      <h3><i class="fas fa-user-tie"></i> My Role</h3>
+      <p id="project-role"></p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <h2 class="section-title" style="margin-bottom: 3rem;">Key Contributions</h2>
+  <div id="contributions-list"></div>
+
+  <div style="text-align: center; margin-top: 4rem;">
+    <a href="index.html#projects" class="btn btn-primary">Back to All Projects</a>
+  </div>
+
+  <div id="image-modal" class="modal">
+  <span class="close-modal">&times;</span>
+  <img class="modal-content" id="expanded-image">
+  <div id="modal-caption"></div>
+</div>
+
+
+</main>
+
+<footer>
+  <div class="container">
+    <p>© 2026 Ethan Ly | Let's build something great together!</p>
+  </div>
+</footer>
+
+<script src="projects.js"></script>
+</body>
+</html>
