@@ -40,11 +40,11 @@ const skillsData = [
 
 const projectsData = [
   {
-    title: "Melbourne Rental Price & Trends Dashboard",
+    title: "Melbourne Rental Intelligence",
     description: "A full-stack data analytics web application that explores and visualises rental property prices and trends across Melbourne.",
     tech: ["Python", "Pandas", "PostgreSQL", "FastAPI", "React", "Render"],
     icon: "img/rental_banner.png",
-    link: "projects/melbourne-rental.html",
+    link: "projects/rental.html",
     liveDemo: "https://melbourne-rental-intelligence.onrender.com/",
     github: "https://github.com/EthanLy1/melbourne-rental-intelligence",
     isUnderConstruction: false,
@@ -53,7 +53,7 @@ const projectsData = [
     placeholderIcon: "fas fa-map-marked-alt"
   },
   {
-    title: "Algorithmic Trading Tool (Algotrade)",
+    title: "Algorithmic Trading Tool",
     description: "Web Application Capstone project during final year in Computer Science. Views historical/real-time stock and crypto data and can execute trades.",
     tech: ["Python", "React", "Flask/FastAPI", "Node.js", "HTML/CSS", "JSON"],
     icon: null,
@@ -66,9 +66,11 @@ const projectsData = [
   {
     title: "Custom Website for Katrina Wurm",
     description: "Developed a website for client in industry project. Adhering to clients functional and non-functional requirements and applying client feedback in Agile development.",
-    tech: ["Wordpress"],
-    icon: null,
+    tech: ["Wordpress", "Elementor"], 
+    icon: "img/industry_banner.png",
     link: "projects/industry.html",
+    liveDemo: "https://www.katrinawurm.com.au/",  
+    liveDemoText: "Live Site", 
     isUnderConstruction: false,
     accentColor: "#7c3aed",
     accentBg: "#f5f3ff",
@@ -172,11 +174,12 @@ function renderProjects() {
   let linksHTML = '';
 
   if (project.liveDemo) {
-    linksHTML += `
-      <a href="${project.liveDemo}" target="_blank" class="btn btn-primary btn-sm">
-        <i class="fas fa-external-link-alt"></i> Live Demo
-      </a>`;
-  }
+  const buttonText = project.liveDemoText || "Live Demo"; 
+  linksHTML += `
+    <a href="${project.liveDemo}" target="_blank" class="btn btn-primary btn-sm">
+      <i class="fas fa-external-link-alt"></i> ${buttonText}
+    </a>`;
+}
 
   if (project.github) {
     linksHTML += `

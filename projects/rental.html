@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="../img/logo.png">
+  <title>Melbourne Rental Intelligence | Ethan Ly</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body style="background: #ffffff;">
+
+<nav>
+  <div class="nav-container">
+    <div class="logo">
+      <a href="../index.html#home" class="logo-link">Ethan Ly</a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="../index.html#home">Home</a></li>
+      <li><a href="../index.html#projects">Projects</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="container" style="padding-top: 3rem; padding-bottom: 5rem;">
+
+  <!-- Back link -->
+  <a href="../index.html#projects" style="display: inline-flex; align-items: center; gap: 0.4rem; color: #64748b; text-decoration: none; font-size: 0.9rem; font-weight: 600; margin-bottom: 2rem; transition: color 0.2s;" onmouseover="this.style.color='#2563eb'" onmouseout="this.style.color='#64748b'">
+    <i class="fas fa-arrow-left"></i> Back to Projects
+  </a>
+
+  <!-- Header -->
+  <div style="margin-bottom: 2.5rem;">
+    <span class="badge-style">Full-Stack Data & Visualisation</span>
+    <h1 class="section-title" style="margin-bottom: 0.75rem;">Melbourne Rental Intelligence</h1>
+    <p style="color: #475569; font-size: 1.05rem; line-height: 1.7; max-width: 700px; margin-bottom: 1.25rem;">
+      An interactive analytics platform exploring Melbourne's rental market across 119 suburbs — from raw government data to a live, filterable dashboard.
+    </p>
+
+    <!-- Tech tags -->
+    <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;">
+      <span class="tech-tag">Python</span>
+      <span class="tech-tag">Pandas</span>
+      <span class="tech-tag">PostgreSQL</span>
+      <span class="tech-tag">SQLAlchemy</span>
+      <span class="tech-tag">FastAPI</span>
+      <span class="tech-tag">React</span>
+      <span class="tech-tag">Recharts</span>
+      <span class="tech-tag">Leaflet</span>
+      <span class="tech-tag">Vite</span>
+      <span class="tech-tag">Axios</span>
+    </div>
+
+    <!-- Action buttons -->
+    <div class="btn-group">
+      <a href="https://melbourne-rental-intelligence.onrender.com/" target="_blank" class="btn btn-primary">
+        <i class="fas fa-external-link-alt"></i> Live Demo
+      </a>
+      <a href="https://github.com/EthanLy1/melbourne-rental-intelligence" target="_blank" class="btn btn-outline" style="border-color: #1e293b; color: #1e293b;">
+        <i class="fab fa-github"></i> View on GitHub
+      </a>
+    </div>
+  </div>
+
+  <!-- Hero image -->
+   <div style="margin: 2.5rem 0; border-radius: 1rem; overflow: hidden; border: 1px solid #e2e8f0; box-shadow: 0 4px 16px rgba(0,0,0,0.06);">
+    <video id="project-poster" src="../vid/rental_demo.mp4" style="width: 100%; display: block;" controls autoplay muted loop playsinline></video>
+  </div>
+
+  <!-- Summary boxes -->
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 3rem 0;">
+    <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 1rem; padding: 1.75rem;">
+      <h3 style="display: flex; align-items: center; gap: 0.6rem; font-size: 1.15rem; font-weight: 700; margin-bottom: 0.75rem; color: #0f172a;">
+        <span style="display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 8px; background: #eef2ff; color: #2563eb; font-size: 1rem;"><i class="fas fa-bullseye"></i></span>
+        The Goal
+      </h3>
+      <p style="color: #475569; line-height: 1.7; font-size: 0.95rem;">Replace tedious manual suburb comparisons with a single interactive dashboard. Uncover rent trends, affordability hotspots, and regional patterns — all from one place.</p>
+    </div>
+    <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 1rem; padding: 1.75rem;">
+      <h3 style="display: flex; align-items: center; gap: 0.6rem; font-size: 1.15rem; font-weight: 700; margin-bottom: 0.75rem; color: #0f172a;">
+        <span style="display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 8px; background: #eef2ff; color: #2563eb; font-size: 1rem;"><i class="fas fa-user-tie"></i></span>
+        My Role
+      </h3>
+      <p style="color: #475569; line-height: 1.7; font-size: 0.95rem;">Solo full-stack developer. I handled the entire pipeline: cleaning raw Excel data with Pandas, designing a PostgreSQL schema, building a FastAPI backend, and creating an interactive React frontend — deployed end-to-end.</p>
+    </div>
+  </div>
+
+  <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 3rem 0;">
+
+  <!-- Development Journey -->
+  <h2 class="section-title" style="margin-bottom: 2.5rem;">Development Journey</h2>
+
+  <div style="display: flex; flex-direction: column; gap: 3rem;">
+    <!-- Step 1 -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: center;">
+      <div>
+        <h4 style="font-size: 1.25rem; font-weight: 700; color: #0f172a; margin-bottom: 0.5rem;">Data Engineering</h4>
+        <p style="color: #475569; line-height: 1.7; font-size: 0.95rem;">Loaded raw Excel data from the Victorian Government. Cleaned and transformed it with Pandas — handled missing values with NaN conversion, filtered regions outside Melbourne, standardised column names, and performed exploratory analysis including regional comparisons and suburb rankings.</p>
+      </div>
+      <div style="border-radius: 0.75rem; overflow: hidden; border: 1px solid #e2e8f0;">
+        <img src="../img/cleaning.png" alt="Data cleaning in Jupyter" style="width: 100%; display: block; cursor: zoom-in;">
+        <p style="text-align: center; color: #64748b; font-size: 0.8rem; font-style: italic; padding: 0.5rem;">Data cleaning & exploration in Jupyter</p>
+      </div>
+    </div>
+
+    <!-- Step 2 -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: center;">
+      <div style="order: 1;">
+        <h4 style="font-size: 1.25rem; font-weight: 700; color: #0f172a; margin-bottom: 0.5rem;">Database Design</h4>
+        <p style="color: #475569; line-height: 1.7; font-size: 0.95rem;">Set up PostgreSQL database on Neon with a clean rental dataset. Structured data with logical tables and used SQLAlchemy ORM for type-safe database operations.</p>
+      </div>
+      <div style="border-radius: 0.75rem; overflow: hidden; border: 1px solid #e2e8f0; order: 0;">
+        <img src="../img/postgresql.png" alt="PostgreSQL schema" style="width: 100%; display: block; cursor: zoom-in;">
+        <p style="text-align: center; color: #64748b; font-size: 0.8rem; font-style: italic; padding: 0.5rem;">PostgreSQL schema design</p>
+      </div>
+    </div>
+
+    <!-- Step 3 -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: center;">
+      <div>
+        <h4 style="font-size: 1.25rem; font-weight: 700; color: #0f172a; margin-bottom: 0.5rem;">API Development</h4>
+        <p style="color: #475569; line-height: 1.7; font-size: 0.95rem;">Built a FastAPI backend that serves rental market data via RESTful API, connecting to PostgreSQL with SQLAlchemy ORM and enabling cross-origin requests through CORS middleware.</p>
+      </div>
+      <div style="border-radius: 0.75rem; overflow: hidden; border: 1px solid #e2e8f0;">
+        <img src="../img/fastapi.png" alt="FastAPI backend" style="width: 100%; display: block; cursor: zoom-in;">
+        <p style="text-align: center; color: #64748b; font-size: 0.8rem; font-style: italic; padding: 0.5rem;">FastAPI endpoint testing</p>
+      </div>
+    </div>
+
+    <!-- Step 4 -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: center;">
+      <div style="order: 1;">
+        <h4 style="font-size: 1.25rem; font-weight: 700; color: #0f172a; margin-bottom: 0.5rem;">Frontend Implementation</h4>
+        <p style="color: #475569; line-height: 1.7; font-size: 0.95rem;">Built the React dashboard with Vite. Reusable chart components via Recharts, interactive map with Leaflet, dynamic filters, and responsive layout — all wired to the backend with Axios.</p>
+      </div>
+      <div style="border-radius: 0.75rem; overflow: hidden; border: 1px solid #e2e8f0; order: 0;">
+        <img src="../img/dashboard.png" alt="React dashboard" style="width: 100%; display: block; cursor: zoom-in;">
+        <p style="text-align: center; color: #64748b; font-size: 0.8rem; font-style: italic; padding: 0.5rem;">Interactive dashboard UI</p>
+      </div>
+    </div>
+
+    <!-- Step 5 -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: center;">
+      <div>
+        <h4 style="font-size: 1.25rem; font-weight: 700; color: #0f172a; margin-bottom: 0.5rem;">Deployment</h4>
+        <p style="color: #475569; line-height: 1.7; font-size: 0.95rem;">Deployed the FastAPI backend and React frontend on Render. Database hosted on Neon. Version controlled with GitHub for tracking changes throughout development.</p>
+      </div>
+      <div style="border-radius: 0.75rem; overflow: hidden; border: 1px solid #e2e8f0;">
+        <img src="../img/render.png" alt="Deployment architecture" style="width: 100%; display: block; cursor: zoom-in;">
+        <p style="text-align: center; color: #64748b; font-size: 0.8rem; font-style: italic; padding: 0.5rem;">Production deployment on Render</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to projects -->
+  <div style="text-align: center; margin-top: 4rem;">
+    <a href="../index.html#projects" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Back to All Projects</a>
+  </div>
+
+</main>
+
+<!-- Lightbox Modal -->
+<div id="image-modal" class="modal">
+  <span class="close-modal">&times;</span>
+  <img class="modal-content" id="expanded-image">
+  <div id="modal-caption"></div>
+</div>
+
+<footer>
+  <div class="container">
+    <p>© 2026 Ethan Ly | Let's build something great together!</p>
+  </div>
+</footer>
+
+<script>
+function setupLightbox() {
+  const modal = document.getElementById("image-modal");
+  const modalImg = document.getElementById("expanded-image");
+  const modalCaption = document.getElementById("modal-caption");
+  const closeModal = document.querySelector(".close-modal");
+
+  let modalVideo = document.getElementById("expanded-video");
+  if (!modalVideo) {
+    modalVideo = document.createElement("video");
+    modalVideo.id = "expanded-video";
+    modalVideo.controls = true;
+    modalVideo.autoplay = true;
+    modalVideo.muted = false;
+    modalVideo.style.maxWidth = "90%";
+    modalVideo.style.maxHeight = "80vh";
+    modalVideo.style.display = "none";
+    modalImg.parentNode.insertBefore(modalVideo, modalImg);
+  }
+
+  const openModal = (src, captionText) => {
+    modal.style.display = "flex";
+    if (src.endsWith(".mp4")) {
+      modalImg.style.display = "none";
+      modalVideo.style.display = "block";
+      modalVideo.src = src;
+      modalVideo.play();
+    } else {
+      modalVideo.style.display = "none";
+      modalVideo.pause();
+      modalImg.style.display = "block";
+      modalImg.src = src;
+    }
+    if (modalCaption) modalCaption.textContent = captionText || "";
+  };
+
+  const handleClose = () => {
+    modal.style.display = "none";
+    modalVideo.pause();
+    modalVideo.src = "";
+  };
+
+  closeModal.onclick = handleClose;
+  modal.onclick = (e) => {
+    if (e.target !== modalImg && e.target !== modalVideo) handleClose();
+  };
+
+  // Hero image
+  const heroImg = document.getElementById("project-poster");
+  if (heroImg) heroImg.onclick = () => openModal(heroImg.src, "Melbourne Rental Intelligence Dashboard");
+
+  // All contribution images
+  document.querySelectorAll("img[src*='devops'], img[src*='img/']").forEach(img => {
+    const captionEl = img.parentElement?.querySelector("p");
+    const caption = captionEl ? captionEl.textContent : "";
+    img.style.cursor = "zoom-in";
+    img.onclick = () => openModal(img.src, caption);
+  });
+}
+
+setupLightbox();
+</script>
+
+</body>
+</html>
