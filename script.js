@@ -42,26 +42,37 @@ const projectsData = [
   {
     title: "Melbourne Rental Price & Trends Dashboard",
     description: "A full-stack data analytics web application that explores and visualises rental property prices and trends across Melbourne.",
-    tech: ["Python", "Pandas", "Jupyter", "PostgreSQL", "SQLAlchemy", "FastAPI", "React", "Recharts", "Leaflet", "Vite", "Axios", "Render"],
+    tech: ["Python", "Pandas", "PostgreSQL", "FastAPI", "React", "Render"],
     icon: "img/rental_banner.png",
     link: "projects/melbourne-rental.html",
-    isUnderConstruction: false
+    liveDemo: "https://melbourne-rental-intelligence.onrender.com/",
+    github: "https://github.com/EthanLy1/melbourne-rental-intelligence",
+    isUnderConstruction: false,
+    accentColor: "#2563eb",
+    accentBg: "#eff6ff",
+    placeholderIcon: "fas fa-map-marked-alt"
   },
   {
     title: "Algorithmic Trading Tool (Algotrade)",
     description: "Web Application Capstone project during final year in Computer Science. Views historical/real-time stock and crypto data and can execute trades.",
     tech: ["Python", "React", "Flask/FastAPI", "Node.js", "HTML/CSS", "JSON"],
-    icon: "fas fa-chart-line",
+    icon: null,
     link: "projects/capstone.html",
-    isUnderConstruction: false
+    isUnderConstruction: false,
+    accentColor: "#059669",
+    accentBg: "#ecfdf5",
+    placeholderIcon: "fas fa-chart-line"
   },
   {
     title: "Custom Website for Katrina Wurm",
     description: "Developed a website for client in industry project. Adhering to clients functional and non-functional requirements and applying client feedback in Agile development.",
     tech: ["Wordpress"],
-    icon: "fas fa-globe",
+    icon: null,
     link: "projects/industry.html",
-    isUnderConstruction: false
+    isUnderConstruction: false,
+    accentColor: "#7c3aed",
+    accentBg: "#f5f3ff",
+    placeholderIcon: "fas fa-globe"
   }
 ];
 
@@ -71,12 +82,6 @@ const experienceData = [
     company: "Woolworths Supermarkets",
     date: "July 2023 - Present",
     desc: "Collaborated in a 7+ person team to achieve daily operational targets under pressure as well as working individually in my task and role. Developed communication and conflict resolution skills in a fast-paced environment."
-  },
-  {
-    title: "Administration/Office Support (Casual)",
-    company: "Creative Insights",
-    date: "Jan 2019 – Jan 2020",
-    desc: "Handled data entry and submitted Medicare Bulk-billed claims online. Includes greeting clients, managing client's booking and operating company phone."
   }
 ];
 
@@ -108,57 +113,86 @@ function renderProjects() {
     const card = document.createElement("div");
     card.className = "project-card";
 
+    // --- Image / Placeholder Area ---
     const imgDiv = document.createElement("div");
     imgDiv.className = "project-img";
-    const isImage = project.icon.includes('.') || project.icon.startsWith('data:') || project.icon.startsWith('http');
+
+    const isImage = project.icon && (project.icon.includes('.') || project.icon.startsWith('data:') || project.icon.startsWith('http'));
 
     if (isImage) {
-      imgDiv.innerHTML = `<img src="${project.icon}" alt="${project.title} banner" style="width: 100%; height: 100%; object-fit: cover;">`;
+      imgDiv.innerHTML = `<img src="${project.icon}" alt="${project.title} banner" style="width:100%;height:100%;object-fit:cover;">`;
     } else {
-      imgDiv.innerHTML = `<i class="${project.icon}" style="font-size: 3.5rem;"></i>`;
+      const accent = project.accentColor || "#2563eb";
+      const accentBg = project.accentBg || "#eff6ff";
+      imgDiv.style.background = accentBg;
+      imgDiv.innerHTML = `
+        <div class="project-placeholder" style="--accent:${accent};">
+          <div class="placeholder-icon-wrap">
+            <i class="${project.placeholderIcon || 'fas fa-code'}" style="color:${accent};"></i>
+          </div>
+        </div>`;
     }
 
+    // --- Info Body ---
     const infoDiv = document.createElement("div");
     infoDiv.className = "project-info";
 
+    // Title
     const titleEl = document.createElement("h3");
     if (project.isUnderConstruction) {
-      titleEl.innerHTML = `${project.title} <span style="font-size: 0.7rem; background: #fef3c7; color: #92400e; padding: 2px 6px; border-radius: 4px; margin-left: 5px; vertical-align: middle; border: 1px solid #f59e0b;">🚧 Dev</span>`;
+      titleEl.innerHTML = `${project.title} <span class="badge-under-construction">🚧 Dev</span>`;
     } else {
       titleEl.textContent = project.title;
     }
 
+    // Description
     const descEl = document.createElement("p");
     descEl.textContent = project.description;
 
+    // Tech tags
     const techStackDiv = document.createElement("div");
     techStackDiv.className = "tech-stack";
-
     project.tech.forEach(tech => {
       const tag = document.createElement("span");
-
       tag.className = "tech-tag";
       tag.textContent = tech;
-
       techStackDiv.appendChild(tag);
     });
 
+    // Links
     const linksDiv = document.createElement("div");
     linksDiv.className = "project-links";
 
     if (project.isUnderConstruction) {
       linksDiv.innerHTML = `
-        <span class="btn btn-disabled" style="padding: 0.5rem 1.2rem; font-size: 0.85rem; opacity: 0.6; cursor: not-allowed; border: 1px dashed #cbd5e1; color: #64748b; display: inline-block; border-radius: 6px;">
+        <span class="btn btn-disabled">
           <i class="fas fa-hammer"></i> Coming Soon
-        </span>
-      `;
+        </span>`;
     } else {
-      linksDiv.innerHTML = `
-        <a href="${project.link}" class="btn btn-outline" style="padding: 0.5rem 1.2rem; font-size: 0.85rem;">
-          <i class="fas fa-circle-info"></i> More Info
-        </a>
-      `;
-    }
+  let linksHTML = '';
+
+  if (project.liveDemo) {
+    linksHTML += `
+      <a href="${project.liveDemo}" target="_blank" class="btn btn-primary btn-sm">
+        <i class="fas fa-external-link-alt"></i> Live Demo
+      </a>`;
+  }
+
+  if (project.github) {
+    linksHTML += `
+      <a href="${project.github}" target="_blank" class="btn btn-ghost btn-sm">
+        <i class="fab fa-github"></i> Repo
+      </a>`;
+  }
+
+  // More Info always last
+  linksHTML += `
+    <a href="${project.link}" class="btn btn-outline btn-sm">
+      <i class="fas fa-circle-info"></i> More Info
+    </a>`;
+
+  linksDiv.innerHTML = linksHTML;
+}
 
     infoDiv.appendChild(titleEl);
     infoDiv.appendChild(descEl);
