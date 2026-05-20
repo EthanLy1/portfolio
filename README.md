@@ -1,4 +1,4 @@
-# Portfolio Website <img src="./img/logo.png" height="32" alt="Logo">
+# Portfolio Website 
 
 ![GitHub Pages](https://img.shields.io/badge/Live-GitHub%20Pages-2563eb?logo=githubpages)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
