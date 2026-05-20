@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="../img/logo.png">
+  <title>Custom Website for Katrina Wurm | Ethan Ly</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body style="background: #ffffff;">
+
+<nav>
+  <div class="nav-container">
+    <div class="logo">
+      <a href="../index.html#home" class="logo-link">Ethan Ly</a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="../index.html#home">Home</a></li>
+      <li><a href="../index.html#projects">Projects</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="container" style="padding-top: 3rem; padding-bottom: 5rem;">
+  <a href="../index.html#projects" class="btn-back"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+
+  <header style="margin-top: 1rem;">
+    <span class="badge-style">Industry Project | Client Delivery</span>
+    <h1 class="section-title">Custom Website for Katrina Wurm</h1>
+    <div class="tech-stack" style="margin-top: -1.5rem; margin-bottom: 2rem;">
+      <span class="tech-tag">Wordpress</span>
+    </div>
+  </header>
+
+  <div class="project-hero-container">
+    <img id="project-poster" src="../img/brand.png" alt="Katrina Wurm Website" class="hero-poster">
+  </div>
+
+  <div class="project-summary-grid">
+    <div class="summary-box">
+      <h3><i class="fas fa-circle-info"></i> About the Project</h3>
+      <p>This project was about making an updated website for a client as an industry project during my Computer Science degree. The goal was to improve brand consistency, improve SEO, and update information for Katrina. Project was completed in Agile method with client meetings every 2-3 weeks in person. Group consisted of six members. <br><br> Website live at: <a href='https://www.katrinawurm.com.au/' target='_blank' style='color: #4f46e5; text-decoration: underline;'>katrinawurm.com.au</a></p>
+    </div>
+    <div class="summary-box">
+      <h3><i class="fas fa-user-tie"></i> My Role</h3>
+      <p>Created pages for the website. Applying feedback and documenting satisfied features during client meetings. Assisted teammates when needed. Main contributions include creating the about page, blog page, and dynamic header.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <h2 class="section-title" style="margin-bottom: 3rem;">Key Contributions</h2>
+
+  <div id="contributions-list">
+    <div class="contribution-item">
+      <div class="contrib-text">
+        <h4>Developing the website</h4>
+        <p>The website was made using Wordpress and Elementor, a styling plugin in Wordpress. While developing the website, we adhered to the client's functional and non-functional requirements such as themes, colours, logos and pictures, etc. Additionally, other plugins were added to the website to improve performance and monitor data, including LiteSpeed Cache and MonsterInsights.</p>
+      </div>
+      <div class="contrib-media">
+        <img src="../img/elementor.png" alt="Elementor">
+        <p class="image-caption">Elementor plugin</p>
+      </div>
+    </div>
+
+    <div class="contribution-item">
+      <div class="contrib-text">
+        <h4>Blog page</h4>
+        <p>During development, I took on the task of creating the blog page. Katrina expressed multiple features to be included in the blog page as it was a new page that was not present in the previous website. Features of the blog page include viewing posts, leaving comments, searching for posts via search bar, and viewing recent comments. On the other hand, the admin can edit posts, as well as add/remove/archive posts and comments.</p>
+      </div>
+      <div class="contrib-media">
+        <video autoplay muted loop playsinline class="contrib-video">
+          <source src="../vid/blogdemo.mp4" type="video/mp4">
+        </video>
+        <p class="image-caption">Blog features including posts, comments, search bar, etc</p>
+      </div>
+    </div>
+
+    <div class="contribution-item">
+      <div class="contrib-text">
+        <h4>Dynamic header</h4>
+        <p>I also created the header to fit the client's needs. Katrina expressed that she desired a dynamic header, with a moving GIF, animations, and links to her socials. It was ensured the theme was applied to match the colour codes listed in her requirements.</p>
+      </div>
+      <div class="contrib-media">
+        <video autoplay muted loop playsinline class="contrib-video">
+          <source src="../vid/headerdemo.mp4" type="video/mp4">
+        </video>
+        <p class="image-caption">Header with dynamic animation and links to socials</p>
+      </div>
+    </div>
+
+    <div class="contribution-item">
+      <div class="contrib-text">
+        <h4>About page</h4>
+        <p>The about page was important in telling the story of Katrina to viewers. This page was also used to give credibility to her status, showing each award she has achieved through being a life coach. This page not only captures the Katrina's personality, but expresses her values and the help she can provide.</p>
+      </div>
+      <div class="contrib-media">
+        <video autoplay muted loop playsinline class="contrib-video">
+          <source src="../vid/aboutdemo.mp4" type="video/mp4">
+        </video>
+        <p class="image-caption">Structured about page adhering to client preferences</p>
+      </div>
+    </div>
+  </div>
+
+  <div style="text-align: center; margin-top: 4rem;">
+    <a href="../index.html#projects" class="btn btn-primary">Back to All Projects</a>
+  </div>
+</main>
+
+<div id="image-modal" class="modal">
+  <span class="close-modal">&times;</span>
+  <img class="modal-content" id="expanded-image">
+  <div id="modal-caption"></div>
+</div>
+
+<footer>
+  <div class="container">
+    <p>© 2026 Ethan Ly | Let's build something great together!</p>
+  </div>
+</footer>
+
+<script>
+function setupLightbox() {
+  const modal = document.getElementById("image-modal");
+  const modalImg = document.getElementById("expanded-image");
+  const modalCaption = document.getElementById("modal-caption");
+  const closeModal = document.querySelector(".close-modal");
+
+  let modalVideo = document.getElementById("expanded-video");
+
+  if (!modalVideo) {
+    modalVideo = document.createElement("video");
+    modalVideo.id = "expanded-video";
+    modalVideo.controls = true;
+    modalVideo.autoplay = true;
+    modalVideo.muted = false;
+    modalVideo.style.maxWidth = "90%";
+    modalVideo.style.maxHeight = "80vh";
+    modalVideo.style.display = "none";
+    modalImg.parentNode.insertBefore(modalVideo, modalImg);
+  }
+
+  const openModal = (src, captionText) => {
+    modal.style.display = "flex";
+
+    if (src.endsWith(".mp4")) {
+      modalImg.style.display = "none";
+      modalVideo.style.display = "block";
+      modalVideo.src = src;
+      modalVideo.play();
+    } else {
+      modalVideo.style.display = "none";
+      modalVideo.pause();
+      modalImg.style.display = "block";
+      modalImg.src = src;
+    }
+
+    if (modalCaption) {
+      modalCaption.textContent = captionText || "";
+    }
+  };
+
+  const handleClose = () => {
+    modal.style.display = "none";
+    modalVideo.pause();
+    modalVideo.src = "";
+  };
+
+  closeModal.onclick = handleClose;
+
+  modal.onclick = (e) => {
+    if (e.target !== modalImg && e.target !== modalVideo) {
+      handleClose();
+    }
+  };
+
+  const heroImg = document.getElementById("project-poster");
+  if (heroImg) {
+    heroImg.onclick = () => openModal(heroImg.src, "Katrina Wurm Website");
+  }
+
+  document.querySelectorAll(".contrib-media").forEach((container) => {
+    const media = container.querySelector("img, video");
+    const captionText = container.querySelector(".image-caption")?.textContent || "";
+
+    if (media) {
+      media.style.cursor = "zoom-in";
+      media.onclick = () => {
+        const src = media.tagName === "VIDEO" ? media.querySelector("source").src : media.src;
+        openModal(src, captionText);
+      };
+    }
+  });
+}
+
+setupLightbox();
+</script>
+</body>
+</html>

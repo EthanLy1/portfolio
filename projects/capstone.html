@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="../img/logo.png">
+  <title>Algorithmic Trading Tool (Algotrade) | Ethan Ly</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body style="background: #ffffff;">
+
+<nav>
+  <div class="nav-container">
+    <div class="logo">
+      <a href="../index.html#home" class="logo-link">Ethan Ly</a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="../index.html#home">Home</a></li>
+      <li><a href="../index.html#projects">Projects</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="container" style="padding-top: 3rem; padding-bottom: 5rem;">
+  <a href="../index.html#projects" class="btn-back"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+
+  <header style="margin-top: 1rem;">
+    <span class="badge-style">Capstone Project | Team Lead</span>
+    <h1 class="section-title">Algorithmic Trading Tool (Algotrade)</h1>
+    <div class="tech-stack" style="margin-top: -1.5rem; margin-bottom: 2rem;">
+      <span class="tech-tag">Python</span>
+      <span class="tech-tag">React</span>
+      <span class="tech-tag">Flask/FastAPI</span>
+      <span class="tech-tag">Node.js</span>
+      <span class="tech-tag">HTML/CSS</span>
+      <span class="tech-tag">JSON</span>
+    </div>
+  </header>
+
+  <div class="project-hero-container">
+    <img id="project-poster" src="../img/algotradeposter.png" alt="Algotrade" class="hero-poster">
+  </div>
+
+  <div class="project-summary-grid">
+    <div class="summary-box">
+      <h3><i class="fas fa-circle-info"></i> About the Project</h3>
+      <p>This project is a trading web application that allows users to execute trades, as well as provide trade-related information and assistance. The project was completed in Agile method with weekly client meetings online. Features include real-time stock and crypto tracking and custom strategy execution.</p>
+    </div>
+    <div class="summary-box">
+      <h3><i class="fas fa-user-tie"></i> My Role</h3>
+      <p>In this project I was chosen as the Project Leader for a team of five. Tasks include managing the team, communicating with client, and completing technical work. I primarily worked on the backend engineering the database, and adding features to the application.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <h2 class="section-title" style="margin-bottom: 3rem;">Key Contributions</h2>
+
+  <div id="contributions-list">
+    <div class="contribution-item">
+      <div class="contrib-text">
+        <h4>Database Schema & Implementation</h4>
+        <p>To support the trading logic, I implemented a non-relational schema that handles high-frequency data updates and user strategy storage efficiently.</p>
+      </div>
+      <div class="contrib-media">
+        <img src="../img/mongo.png" alt="Database Schema">
+        <p class="image-caption">A view of the MongoDB Atlas database structure and collections.</p>
+      </div>
+    </div>
+
+    <div class="contribution-item">
+      <div class="contrib-text">
+        <h4>Database Engineering (Python & MongoDB)</h4>
+        <p>I designed the cloud-based database architecture using MongoDB Atlas. I developed a suite of Python functions for real-time data manipulation, routing, and rigorous testing to ensure data integrity during trades.</p>
+      </div>
+      <div class="contrib-media">
+        <img src="../img/dbcode.png" alt="Database Engineering">
+        <p class="image-caption">Demo showing the AI Agent processing natural language prompts to manage trades.</p>
+      </div>
+    </div>
+
+    <div class="contribution-item">
+      <div class="contrib-text">
+        <h4>AI Agent Demonstration</h4>
+        <p>The AI Agent acts as an intermediary, allowing users to interact with complex trading strategies without needing to understand the underlying code.</p>
+      </div>
+      <div class="contrib-media">
+        <video autoplay muted loop playsinline class="contrib-video">
+          <source src="../vid/aidemo.mp4" type="video/mp4">
+        </video>
+        <p class="image-caption">The AI Agent in action, executing a user command via natural language.</p>
+      </div>
+    </div>
+
+    <div class="contribution-item">
+      <div class="contrib-text">
+        <h4>AI Integration Logic</h4>
+        <p>I integrated the OpenAI API to allow users to manage trading strategies via natural language. Users can create, update, or delete strategies through simple prompts—a feature the client highlighted as their favorite.</p>
+      </div>
+      <div class="contrib-media">
+        <img src="../img/aicode.png" alt="AI Integration">
+        <p class="image-caption">The Python logic and routing used to connect the OpenAI API to our strategy database.</p>
+      </div>
+    </div>
+
+    <div class="contribution-item">
+      <div class="contrib-text">
+        <h4>Social Sentiment Demo</h4>
+        <p>This demonstration shows how the application pulls live data to provide immediate market feedback to the user.</p>
+      </div>
+      <div class="contrib-media">
+        <video autoplay muted loop playsinline class="contrib-video">
+          <source src="../vid/socialdemo.mp4" type="video/mp4">
+        </video>
+        <p class="image-caption">Demonstration of real-time sentiment scoring from live social media feeds.</p>
+      </div>
+    </div>
+
+    <div class="contribution-item">
+      <div class="contrib-text">
+        <h4>Social Sentiment Analysis Code</h4>
+        <p>I built a sentiment engine using NLTK's VADER library. It evaluates X (Twitter) posts to calculate sentiment scores, categorizing assets as Bullish, Bearish, or Neutral to help users make informed decisions.</p>
+      </div>
+      <div class="contrib-media">
+        <img src="../img/socialcode.png" alt="Sentiment Analysis">
+        <p class="image-caption">The implementation of the VADER SentimentIntensityAnalyzer within our backend pipeline.</p>
+      </div>
+    </div>
+  </div>
+
+  <div style="text-align: center; margin-top: 4rem;">
+    <a href="../index.html#projects" class="btn btn-primary">Back to All Projects</a>
+  </div>
+</main>
+
+<div id="image-modal" class="modal">
+  <span class="close-modal">&times;</span>
+  <img class="modal-content" id="expanded-image">
+  <div id="modal-caption"></div>
+</div>
+
+<footer>
+  <div class="container">
+    <p>© 2026 Ethan Ly | Let's build something great together!</p>
+  </div>
+</footer>
+
+<script>
+function setupLightbox() {
+  const modal = document.getElementById("image-modal");
+  const modalImg = document.getElementById("expanded-image");
+  const modalCaption = document.getElementById("modal-caption");
+  const closeModal = document.querySelector(".close-modal");
+
+  let modalVideo = document.getElementById("expanded-video");
+
+  if (!modalVideo) {
+    modalVideo = document.createElement("video");
+    modalVideo.id = "expanded-video";
+    modalVideo.controls = true;
+    modalVideo.autoplay = true;
+    modalVideo.muted = false;
+    modalVideo.style.maxWidth = "90%";
+    modalVideo.style.maxHeight = "80vh";
+    modalVideo.style.display = "none";
+    modalImg.parentNode.insertBefore(modalVideo, modalImg);
+  }
+
+  const openModal = (src, captionText) => {
+    modal.style.display = "flex";
+
+    if (src.endsWith(".mp4")) {
+      modalImg.style.display = "none";
+      modalVideo.style.display = "block";
+      modalVideo.src = src;
+      modalVideo.play();
+    } else {
+      modalVideo.style.display = "none";
+      modalVideo.pause();
+      modalImg.style.display = "block";
+      modalImg.src = src;
+    }
+
+    if (modalCaption) {
+      modalCaption.textContent = captionText || "";
+    }
+  };
+
+  const handleClose = () => {
+    modal.style.display = "none";
+    modalVideo.pause();
+    modalVideo.src = "";
+  };
+
+  closeModal.onclick = handleClose;
+
+  modal.onclick = (e) => {
+    if (e.target !== modalImg && e.target !== modalVideo) {
+      handleClose();
+    }
+  };
+
+  const heroImg = document.getElementById("project-poster");
+  if (heroImg) {
+    heroImg.onclick = () => openModal(heroImg.src, "Algotrade");
+  }
+
+  document.querySelectorAll(".contrib-media").forEach((container) => {
+    const media = container.querySelector("img, video");
+    const captionText = container.querySelector(".image-caption")?.textContent || "";
+
+    if (media) {
+      media.style.cursor = "zoom-in";
+      media.onclick = () => {
+        const src = media.tagName === "VIDEO" ? media.querySelector("source").src : media.src;
+        openModal(src, captionText);
+      };
+    }
+  });
+}
+
+setupLightbox();
+</script>
+</body>
+</html>

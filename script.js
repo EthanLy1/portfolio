@@ -1,28 +1,58 @@
 const skillsData = [
+  // --- Languages & Core Backend ---
   { name: "Python", icon: "devicon-python-plain colored" },
-  { name: "SQL, PL/SQL, PostgreSQL", icon: "devicon-postgresql-plain colored" },
-  { name: "C#", icon: "devicon-csharp-plain colored" },
-  { name: "AWS (EC2, S3)", icon: "fab fa-aws" },
-  { name: "KNIME", icon: "fas fa-diagram-project" }, 
-  { name: "HTML5/CSS3", icon: "devicon-html5-plain colored" },
   { name: "JavaScript (ES6+)", icon: "devicon-javascript-plain colored" },
+  { name: "C#", icon: "devicon-csharp-plain colored" },
   { name: "Ruby", icon: "devicon-ruby-plain colored" },
-  { name: "Power BI", icon: "fas fa-chart-pie" }, 
-  { name: "Tableau", icon: "fas fa-chart-column" }, 
-  { name: "Microsoft Excel", icon: "fas fa-file-excel" }, 
-  { name: "Microsoft Access", icon: "fas fa-key" }, 
+  { name: "Node.js", icon: "devicon-nodejs-plain colored" },
+
+  // --- Web Frameworks & Frontend Development ---
+  { name: "React", icon: "devicon-react-plain colored" },
+  { name: "FastAPI", icon: "devicon-fastapi-plain colored" },
+  { name: "HTML5/CSS3", icon: "devicon-html5-plain colored" },
+  { name: "Vite", icon: "devicon-vitejs-plain colored" },
+  { name: "REST APIs", icon: "fas fa-code" },
+  { name: "Axios", icon: "fas fa-exchange-alt" },
+
+  // --- Data Analysis, Science & Visualisation ---
+  { name: "Pandas", icon: "devicon-pandas-plain colored" },
+  { name: "Jupyter Notebooks", icon: "devicon-jupyter-plain colored" },
+  { name: "Recharts", icon: "fas fa-chart-line" },
+  { name: "Leaflet (Maps)", icon: "fas fa-map" },
+  { name: "Power BI", icon: "fas fa-chart-pie" },
+  { name: "Tableau", icon: "fas fa-chart-column" },
+  { name: "KNIME", icon: "fas fa-diagram-project" },
+  { name: "Microsoft Excel", icon: "fas fa-file-excel" },
+
+  // --- Databases & ORMs ---
+  { name: "SQL, PL/SQL, PostgreSQL", icon: "devicon-postgresql-plain colored" },
   { name: "MongoDB", icon: "devicon-mongodb-plain colored" },
-  { name: "Git & GitHub Actions", icon: "devicon-git-plain colored" },
+  { name: "SQLAlchemy (ORM)", icon: "devicon-sqlalchemy-plain colored" },
+  { name: "Microsoft Access", icon: "fas fa-key" },
+
+  // --- Cloud, DevOps & Tools ---
+  { name: "Render", icon: "fas fa-cloud-upload-alt" },
+  { name: "AWS (EC2, S3)", icon: "fab fa-aws" },
+  { name: "Microsoft Azure", icon: "devicon-azure-plain colored" },
   { name: "Docker", icon: "devicon-docker-plain colored" },
-  { name: "Microsoft Azure", icon: "devicon-azure-plain colored" }
+  { name: "Git & GitHub Actions", icon: "devicon-git-plain colored" }
 ];
 
 const projectsData = [
+  {
+    title: "Melbourne Rental Price & Trends Dashboard",
+    description: "A full-stack data analytics web application that explores and visualises rental property prices and trends across Melbourne.",
+    tech: ["Python", "Pandas", "Jupyter", "PostgreSQL", "SQLAlchemy", "FastAPI", "React", "Recharts", "Leaflet", "Vite", "Axios", "Render"],
+    icon: "img/rental_banner.png",
+    link: "projects/melbourne-rental.html",
+    isUnderConstruction: false
+  },
   {
     title: "Algorithmic Trading Tool (Algotrade)",
     description: "Web Application Capstone project during final year in Computer Science. Views historical/real-time stock and crypto data and can execute trades.",
     tech: ["Python", "React", "Flask/FastAPI", "Node.js", "HTML/CSS", "JSON"],
     icon: "fas fa-chart-line",
+    link: "projects/capstone.html",
     isUnderConstruction: false
   },
   {
@@ -30,14 +60,8 @@ const projectsData = [
     description: "Developed a website for client in industry project. Adhering to clients functional and non-functional requirements and applying client feedback in Agile development.",
     tech: ["Wordpress"],
     icon: "fas fa-globe",
+    link: "projects/industry.html",
     isUnderConstruction: false
-  },
-  {
-    title: "Melbourne Rental Price & Trends Dashboard",
-    description: "A full-stack data analytics web application that explores and visualises rental property prices and trends across Melbourne.",
-    tech: ["Python", "PostgreSQL", "FastAPI", "React", "Vercel", "Render"],
-    icon: "fas fa-chart-bar",
-    isUnderConstruction: true /* change to false when ready */
   }
 ];
 
@@ -86,7 +110,13 @@ function renderProjects() {
 
     const imgDiv = document.createElement("div");
     imgDiv.className = "project-img";
-    imgDiv.innerHTML = `<i class="${project.icon}" style="font-size: 3.5rem;"></i>`;
+    const isImage = project.icon.includes('.') || project.icon.startsWith('data:') || project.icon.startsWith('http');
+
+    if (isImage) {
+      imgDiv.innerHTML = `<img src="${project.icon}" alt="${project.title} banner" style="width: 100%; height: 100%; object-fit: cover;">`;
+    } else {
+      imgDiv.innerHTML = `<i class="${project.icon}" style="font-size: 3.5rem;"></i>`;
+    }
 
     const infoDiv = document.createElement("div");
     infoDiv.className = "project-info";
@@ -124,7 +154,7 @@ function renderProjects() {
       `;
     } else {
       linksDiv.innerHTML = `
-        <a href="projects.html?id=${encodeURIComponent(project.title)}" class="btn btn-outline" style="padding: 0.5rem 1.2rem; font-size: 0.85rem;">
+        <a href="${project.link}" class="btn btn-outline" style="padding: 0.5rem 1.2rem; font-size: 0.85rem;">
           <i class="fas fa-circle-info"></i> More Info
         </a>
       `;
