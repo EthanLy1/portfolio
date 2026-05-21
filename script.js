@@ -56,7 +56,7 @@ const projectsData = [
     title: "Algorithmic Trading Tool",
     description: "Web Application Capstone project during final year in Computer Science. Views historical/real-time stock and crypto data and can execute trades.",
     tech: ["Python", "React", "Flask/FastAPI", "Node.js", "HTML/CSS", "JSON"],
-    icon: null,
+    icon: "img/algotradeposter.png",
     link: "projects/capstone.html",
     isUnderConstruction: false,
     accentColor: "#059669",
@@ -75,7 +75,21 @@ const projectsData = [
     accentColor: "#7c3aed",
     accentBg: "#f5f3ff",
     placeholderIcon: "fas fa-globe"
-  }
+  },
+  {
+    title: "Athena Lifting — Gym Progression & Analytics Platform",
+    description: "A full-stack fitness tracking application for logging workouts, visualising strength progression, and analysing training data over time.",
+    tech: [],
+    icon: null,
+    link: null,
+    liveDemo: null,
+    github: null,
+    isUnderConstruction: true,
+    accentColor: "#dc2626",
+    accentBg: "#fef2f2",
+    placeholderIcon: "fas fa-dumbbell"
+}
+  
 ];
 
 const experienceData = [
