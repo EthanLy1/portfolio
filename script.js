@@ -38,18 +38,19 @@ const skillsData = [
 
 const projectsData = [
   {
-    title: "Melbourne Rental Intelligence",
-    description: "A full-stack data analytics web application that explores and visualises rental property prices and trends across Melbourne.",
-    tech: ["Python", "Pandas", "PostgreSQL", "FastAPI", "React", "Render"],
-    icon: "img/rental_banner.png",
-    link: "projects/rental.html",
-    liveDemo: "https://melbourne-rental-intelligence.onrender.com/",
-    github: "https://github.com/EthanLy1/melbourne-rental-intelligence",
-    isUnderConstruction: false,
-    accentColor: "#2563eb",
-    accentBg: "#eff6ff",
-    placeholderIcon: "fas fa-map-marked-alt"
-  },
+  title: "Melbourne Rental Intelligence",
+  description: "A full-stack data analytics web application that explores and visualises rental property prices and trends across Melbourne.",
+  tech: ["Python", "Pandas", "PostgreSQL", "FastAPI", "React", "Render"],
+  icon: "img/rental_banner.png",
+  link: "projects/rental.html",
+  liveDemo: "https://melbourne-rental-intelligence.onrender.com/",
+  github: "https://github.com/EthanLy1/melbourne-rental-intelligence",
+  linkedinPost: "https://www.linkedin.com/posts/ethanly1_python-fastapi-react-ugcPost-7464812369559580672-dziq/",
+  isUnderConstruction: false,
+  accentColor: "#2563eb",
+  accentBg: "#eff6ff",
+  placeholderIcon: "fas fa-map-marked-alt"
+},
   {
     title: "Algorithmic Trading Tool",
     description: "Web Application Capstone project during final year in Computer Science. Views historical/real-time stock and crypto data and can execute trades.",
@@ -174,30 +175,38 @@ function renderProjects() {
     });
 
     // Links
-    const linksDiv = document.createElement("div");
-    linksDiv.className = "project-links";
+const linksDiv = document.createElement("div");
+linksDiv.className = "project-links";
 
-    if (project.isUnderConstruction) {
-      linksDiv.innerHTML = `
-        <span class="btn btn-disabled">
-          <i class="fas fa-hammer"></i> Coming Soon
-        </span>`;
-    } else {
+if (project.isUnderConstruction) {
+  linksDiv.innerHTML = `
+    <span class="btn btn-disabled">
+      <i class="fas fa-hammer"></i> Coming Soon
+    </span>`;
+} else {
   let linksHTML = '';
 
   if (project.liveDemo) {
-  const buttonText = project.liveDemoText || "Live Demo"; 
-  linksHTML += `
-    <a href="${project.liveDemo}" target="_blank" class="btn btn-primary btn-sm">
-      <i class="fas fa-external-link-alt"></i> ${buttonText}
-    </a>`;
-}
+    const buttonText = project.liveDemoText || "Live Demo"; 
+    linksHTML += `
+      <a href="${project.liveDemo}" target="_blank" class="btn btn-primary btn-sm">
+        <i class="fas fa-external-link-alt"></i> ${buttonText}
+      </a>`;
+  }
 
   if (project.github) {
     linksHTML += `
       <a href="${project.github}" target="_blank" class="btn btn-ghost btn-sm">
         <i class="fab fa-github"></i> Repo
       </a>`;
+  }
+
+  // NEW 👇 LinkedIn button (only if exists)
+  if (project.linkedinPost) {
+    linksHTML += `
+  <a href="${project.linkedinPost}" target="_blank" class="btn btn-sm btn-linkedin">
+    <i class="fab fa-linkedin"></i> LinkedIn
+  </a>`;
   }
 
   // More Info always last

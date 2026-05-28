@@ -738,3 +738,16 @@ footer {
     font-size: 0.85rem;
   }
 }
+
+
+.btn-linkedin {
+  border: 1.5px solid #0A66C2;
+  color: #0A66C2;
+  background: transparent;
+  transition: all 0.2s ease;
+}
+
+.btn-linkedin:hover {
+  background: #0A66C2;
+  color: white;
+}
