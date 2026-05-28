@@ -3,7 +3,6 @@ const skillsData = [
   { name: "Python", icon: "devicon-python-plain colored" },
   { name: "JavaScript (ES6+)", icon: "devicon-javascript-plain colored" },
   { name: "C#", icon: "devicon-csharp-plain colored" },
-  { name: "Ruby", icon: "devicon-ruby-plain colored" },
   { name: "Node.js", icon: "devicon-nodejs-plain colored" },
 
   // --- Web Frameworks & Frontend Development ---
@@ -32,7 +31,6 @@ const skillsData = [
 
   // --- Cloud, DevOps & Tools ---
   { name: "Render", icon: "fas fa-cloud-upload-alt" },
-  { name: "AWS (EC2, S3)", icon: "fab fa-aws" },
   { name: "Microsoft Azure", icon: "devicon-azure-plain colored" },
   { name: "Docker", icon: "devicon-docker-plain colored" },
   { name: "Git & GitHub Actions", icon: "devicon-git-plain colored" }
