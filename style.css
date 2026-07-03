@@ -565,6 +565,10 @@ footer {
    RESPONSIVE
 -------------------------------------------- */
 @media (max-width: 750px) {
+  .logo {
+    display: none;
+  }
+  
   .nav-container {
     flex-direction: column;
     gap: 1rem;
