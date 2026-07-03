@@ -1,46 +1,24 @@
-const skillsData = [
-  // --- Languages & Core Backend ---
-  { name: "Python", icon: "devicon-python-plain colored" },
-  { name: "JavaScript (ES6+)", icon: "devicon-javascript-plain colored" },
-  { name: "C#", icon: "devicon-csharp-plain colored" },
-  { name: "Node.js", icon: "devicon-nodejs-plain colored" },
-
-  // --- Web Frameworks & Frontend Development ---
-  { name: "React", icon: "devicon-react-plain colored" },
-  { name: "FastAPI", icon: "devicon-fastapi-plain colored" },
-  { name: "HTML5/CSS3", icon: "devicon-html5-plain colored" },
-  { name: "Vite", icon: "devicon-vitejs-plain colored" },
-  { name: "REST APIs", icon: "fas fa-code" },
-  { name: "Axios", icon: "fas fa-exchange-alt" },
-
-  // --- Data Analysis, Science & Visualisation ---
-  { name: "Pandas", icon: "devicon-pandas-plain colored" },
-  { name: "Jupyter Notebooks", icon: "devicon-jupyter-plain colored" },
-  { name: "Recharts", icon: "fas fa-chart-line" },
-  { name: "Leaflet (Maps)", icon: "fas fa-map" },
-  { name: "Power BI", icon: "fas fa-chart-pie" },
-  { name: "Tableau", icon: "fas fa-chart-column" },
-  { name: "KNIME", icon: "fas fa-diagram-project" },
-  { name: "Microsoft Excel", icon: "fas fa-file-excel" },
-
-  // --- Databases & ORMs ---
-  { name: "SQL, PL/SQL, PostgreSQL", icon: "devicon-postgresql-plain colored" },
-  { name: "MongoDB", icon: "devicon-mongodb-plain colored" },
-  { name: "SQLAlchemy (ORM)", icon: "devicon-sqlalchemy-plain colored" },
-  { name: "Microsoft Access", icon: "fas fa-key" },
-
-  // --- Cloud, DevOps & Tools ---
-  { name: "Render", icon: "fas fa-cloud-upload-alt" },
-  { name: "Microsoft Azure", icon: "devicon-azure-plain colored" },
-  { name: "Docker", icon: "devicon-docker-plain colored" },
-  { name: "Git & GitHub Actions", icon: "devicon-git-plain colored" }
+const experienceData = [
+  {
+    title: "Junior Data Analyst",
+    company: "Urbis Ltd.",
+    date: "July 2026 - Present",
+    desc: "New to role."
+  },
+  {
+    title: "Fresh Service/Convenience Team Member",
+    company: "Woolworths Supermarkets",
+    date: "July 2023 - July 2026",
+    desc: "Collaborated in a 7+ person team to achieve daily operational targets under pressure as well as working individually in my task and role. Developed communication and conflict resolution skills in a fast-paced environment."
+  }
 ];
+
 
 const projectsData = [
   {
   title: "Melbourne Rental Intelligence",
-  description: "A full-stack data analytics web application that explores and visualises rental property prices and trends across Melbourne.",
-  tech: ["Python", "Pandas", "PostgreSQL", "FastAPI", "React", "Render"],
+  description: "Full-stack application visualising rental property prices and trends across Melbourne. Features map visualisation, dynamic charts, and automated insights.",
+  tech: ["Python", "Pandas", "React", "PostgreSQL"],
   icon: "img/rental_banner.png",
   link: "projects/rental.html",
   liveDemo: "https://melbourne-rental-intelligence.onrender.com/",
@@ -54,7 +32,7 @@ const projectsData = [
   {
     title: "Algorithmic Trading Tool",
     description: "Web Application Capstone project during final year in Computer Science. Views historical/real-time stock and crypto data and can execute trades.",
-    tech: ["Python", "React", "Flask/FastAPI", "Node.js", "HTML/CSS", "JSON"],
+    tech: ["Python", "Flask/FastAPI", "Node.js", "JSON"],
     icon: "img/algotradeposter.png",
     link: "projects/capstone.html",
     isUnderConstruction: false,
@@ -74,30 +52,49 @@ const projectsData = [
     accentColor: "#7c3aed",
     accentBg: "#f5f3ff",
     placeholderIcon: "fas fa-globe"
-  },
-  {
-    title: "Athena Lifting — Gym Progression & Analytics Platform",
-    description: "A full-stack fitness tracking application for logging workouts, visualising strength progression, and analysing training data over time.",
-    tech: [],
-    icon: null,
-    link: null,
-    liveDemo: null,
-    github: null,
-    isUnderConstruction: true,
-    accentColor: "#dc2626",
-    accentBg: "#fef2f2",
-    placeholderIcon: "fas fa-dumbbell"
-}
+  }
   
 ];
 
-const experienceData = [
-  {
-    title: "Fresh Service/Convenience Team Member",
-    company: "Woolworths Supermarkets",
-    date: "July 2023 - Present",
-    desc: "Collaborated in a 7+ person team to achieve daily operational targets under pressure as well as working individually in my task and role. Developed communication and conflict resolution skills in a fast-paced environment."
-  }
+
+const skillsData = [
+  // --- Languages & Core Backend ---
+  { name: "MS Excel", icon: "fas fa-file-excel" },
+  { name: "MS Power BI", icon: "fas fa-chart-pie" },
+  { name: "Tableau", icon: "fas fa-chart-column" },
+  { name: "Python", icon: "devicon-python-plain colored" },
+  { name: "SQL, PL/SQL, PostgreSQL", icon: "devicon-postgresql-plain colored" },
+
+
+  { name: "React", icon: "devicon-react-plain colored" },
+
+  { name: "JavaScript (ES6+)", icon: "devicon-javascript-plain colored" },
+  { name: "Node.js", icon: "devicon-nodejs-plain colored" },
+
+  // --- Web Frameworks & Frontend Development ---
+
+  { name: "FastAPI", icon: "devicon-fastapi-plain colored" },
+  { name: "HTML5/CSS3", icon: "devicon-html5-plain colored" },
+  { name: "REST APIs", icon: "fas fa-code" },
+  { name: "Axios", icon: "fas fa-exchange-alt" },
+
+  // --- Data Analysis, Science & Visualisation ---
+  { name: "Pandas", icon: "devicon-pandas-plain colored" },
+  { name: "Jupyter Notebooks", icon: "devicon-jupyter-plain colored" },
+  { name: "Recharts", icon: "fas fa-chart-line" },
+  { name: "Leaflet (Maps)", icon: "fas fa-map" },
+  { name: "KNIME", icon: "fas fa-diagram-project" },
+
+  // --- Databases & ORMs ---
+  { name: "MongoDB", icon: "devicon-mongodb-plain colored" },
+  { name: "SQLAlchemy (ORM)", icon: "devicon-sqlalchemy-plain colored" },
+  { name: "Microsoft Access", icon: "fas fa-key" },
+
+  // --- Cloud, DevOps & Tools ---
+  { name: "Render", icon: "fas fa-cloud-upload-alt" },
+  { name: "Microsoft Azure", icon: "devicon-azure-plain colored" },
+  { name: "Docker", icon: "devicon-docker-plain colored" },
+  { name: "Git & GitHub Actions", icon: "devicon-git-plain colored" }
 ];
 
 /* Skills */
@@ -201,11 +198,10 @@ if (project.isUnderConstruction) {
       </a>`;
   }
 
-  // NEW 👇 LinkedIn button (only if exists)
   if (project.linkedinPost) {
     linksHTML += `
   <a href="${project.linkedinPost}" target="_blank" class="btn btn-sm btn-linkedin">
-    <i class="fab fa-linkedin"></i> LinkedIn
+    <i class="fab fa-linkedin"></i> Post
   </a>`;
   }
 
@@ -288,7 +284,7 @@ function setFooterYear() {
   if (footer) {
     const year = new Date().getFullYear();
 
-    footer.innerHTML = `© ${year} Ethan Ly | Let's Build something great together!`;
+    footer.innerHTML = `© ${year} Ethan Ly`;
   }
 }
 
