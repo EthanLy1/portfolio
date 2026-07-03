@@ -11,247 +11,246 @@
 </head>
 <body style="background: #ffffff;">
 
-<nav>
-  <div class="nav-container">
-    <div class="logo">
-      <a href="../index.html#home" class="logo-link">Ethan Ly</a>
+  <nav>
+    <div class="nav-container">
+      <div class="logo">
+        <a href="../index.html#home" class="logo-link">Ethan Ly</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="../index.html#home">Home</a></li>
+        <li><a href="../index.html#experience">Experience</a></li>
+        <li><a href="../index.html#projects">Projects</a></li>
+        <li><a href="../index.html#skills">Skills</a></li>
+        <a href="https://linkedin.com/in/ethan-ly-b58153378" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/EthanLy1" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      </ul>
     </div>
-    <ul class="nav-links">
-      <li><a href="../index.html#home">Home</a></li>
-      <li><a href="../index.html#experience">Projects</a></li>
-      <li><a href="../index.html#projects">Projects</a></li>
-      <li><a href="../index.html#skills">Skills</a></li>
-      <a href="https://linkedin.com/in/ethan-ly-b58153378" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-      <a href="https://github.com/EthanLy1" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-    </ul>
+  </nav>
+
+  <main class="container" style="padding-top: 3rem; padding-bottom: 5rem;">
+
+    <!-- Back link -->
+    <a href="../index.html#projects" style="display: inline-flex; align-items: center; gap: 0.4rem; color: #64748b; text-decoration: none; font-size: 0.9rem; font-weight: 600; margin-bottom: 2rem; transition: color 0.2s;" onmouseover="this.style.color='#2563eb'" onmouseout="this.style.color='#64748b'">
+      <i class="fas fa-arrow-left"></i> Back to Projects
+    </a>
+
+    <!-- Header -->
+    <div style="margin-bottom: 2.5rem;">
+      <span class="badge-style">Capstone Project | Team Lead</span>
+      <h1 class="section-title" style="margin-bottom: 0.75rem;">Algorithmic Trading Tool (Algotrade)</h1>
+      <p style="color: #475569; font-size: 1.05rem; line-height: 1.7; max-width: 700px; margin-bottom: 1.25rem;">
+        A trading web application that allows users to execute trades, access real-time stock and crypto tracking, and execute custom strategies.
+      </p>
+
+      <!-- Tech tags -->
+      <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;">
+        <span class="tech-tag">Python</span>
+        <span class="tech-tag">React</span>
+        <span class="tech-tag">Flask/FastAPI</span>
+        <span class="tech-tag">Node.js</span>
+        <span class="tech-tag">HTML/CSS</span>
+        <span class="tech-tag">JSON</span>
+        <span class="tech-tag">MongoDB</span>
+        <span class="tech-tag">OpenAI API</span>
+      </div>
+    </div>
+
+    <!-- Hero image -->
+    <div style="margin: 2.5rem 0; border-radius: 1rem; overflow: hidden; border: 1px solid #e2e8f0; box-shadow: 0 4px 16px rgba(0,0,0,0.06);">
+      <img id="project-poster" src="../img/algotradeposter.png" alt="Algorithmic Trading Tool" style="width: 100%; display: block; cursor: zoom-in;">
+    </div>
+
+    <!-- Summary boxes -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 3rem 0;">
+      <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 1rem; padding: 1.75rem;">
+        <h3 style="display: flex; align-items: center; gap: 0.6rem; font-size: 1.15rem; font-weight: 700; margin-bottom: 0.75rem; color: #0f172a;">
+          <span style="display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 8px; background: #eef2ff; color: #2563eb; font-size: 1rem;"><i class="fas fa-circle-info"></i></span>
+          About the Project
+        </h3>
+        <p style="color: #475569; line-height: 1.7; font-size: 0.95rem;">This project is a trading web application that allows users to execute trades, as well as provide trade-related information and assistance. The project was completed in Agile method with weekly client meetings online. Features include real-time stock and crypto tracking and custom strategy execution.</p>
+      </div>
+      <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 1rem; padding: 1.75rem;">
+        <h3 style="display: flex; align-items: center; gap: 0.6rem; font-size: 1.15rem; font-weight: 700; margin-bottom: 0.75rem; color: #0f172a;">
+          <span style="display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 8px; background: #eef2ff; color: #2563eb; font-size: 1rem;"><i class="fas fa-user-tie"></i></span>
+          My Role
+        </h3>
+        <p style="color: #475569; line-height: 1.7; font-size: 0.95rem;">In this project I was chosen as the Project Leader for a team of five. Tasks include managing the team, communicating with client, and completing technical work. I primarily worked on the backend engineering the database, and adding features to the application.</p>
+      </div>
+    </div>
+
+    <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 3rem 0;">
+
+    <!-- Key Contributions -->
+    <h2 class="section-title" style="margin-bottom: 2.5rem;">Key Contributions</h2>
+
+    <div style="display: flex; flex-direction: column; gap: 3rem;">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: center;">
+        <div>
+          <h4 style="font-size: 1.25rem; font-weight: 700; color: #0f172a; margin-bottom: 0.5rem;">Database Schema & Implementation</h4>
+          <p style="color: #475569; line-height: 1.7; font-size: 0.95rem;">To support the trading logic, I implemented a non-relational schema that handles high-frequency data updates and user strategy storage efficiently.</p>
+        </div>
+        <div style="border-radius: 0.75rem; overflow: hidden; border: 1px solid #e2e8f0;">
+          <img src="../img/mongo.png" alt="Database Schema" style="width: 100%; display: block; cursor: zoom-in;">
+          <p style="text-align: center; color: #64748b; font-size: 0.8rem; font-style: italic; padding: 0.5rem;">A view of the MongoDB Atlas database structure and collections.</p>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: center;">
+        <div style="order: 1;">
+          <h4 style="font-size: 1.25rem; font-weight: 700; color: #0f172a; margin-bottom: 0.5rem;">Database Engineering (Python & MongoDB)</h4>
+          <p style="color: #475569; line-height: 1.7; font-size: 0.95rem;">I designed the cloud-based database architecture using MongoDB Atlas. I developed a suite of Python functions for real-time data manipulation, routing, and rigorous testing to ensure data integrity during trades.</p>
+        </div>
+        <div style="border-radius: 0.75rem; overflow: hidden; border: 1px solid #e2e8f0; order: 0;">
+          <img src="../img/dbcode.png" alt="Database Engineering" style="width: 100%; display: block; cursor: zoom-in;">
+          <p style="text-align: center; color: #64748b; font-size: 0.8rem; font-style: italic; padding: 0.5rem;">Demo showing the AI Agent processing natural language prompts to manage trades.</p>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: center;">
+        <div>
+          <h4 style="font-size: 1.25rem; font-weight: 700; color: #0f172a; margin-bottom: 0.5rem;">AI Agent Demonstration</h4>
+          <p style="color: #475569; line-height: 1.7; font-size: 0.95rem;">The AI Agent acts as an intermediary, allowing users to interact with complex trading strategies without needing to understand the underlying code.</p>
+        </div>
+        <div style="border-radius: 0.75rem; overflow: hidden; border: 1px solid #e2e8f0;">
+          <video autoplay muted loop playsinline style="width: 100%; display: block; cursor: zoom-in;">
+            <source src="../vid/aidemo.mp4" type="video/mp4">
+          </video>
+          <p style="text-align: center; color: #64748b; font-size: 0.8rem; font-style: italic; padding: 0.5rem;">The AI Agent in action, executing a user command via natural language.</p>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: center;">
+        <div style="order: 1;">
+          <h4 style="font-size: 1.25rem; font-weight: 700; color: #0f172a; margin-bottom: 0.5rem;">AI Integration Logic</h4>
+          <p style="color: #475569; line-height: 1.7; font-size: 0.95rem;">I integrated the OpenAI API to allow users to manage trading strategies via natural language. Users can create, update, or delete strategies through simple prompts—a feature the client highlighted as their favorite.</p>
+        </div>
+        <div style="border-radius: 0.75rem; overflow: hidden; border: 1px solid #e2e8f0; order: 0;">
+          <img src="../img/aicode.png" alt="AI Integration" style="width: 100%; display: block; cursor: zoom-in;">
+          <p style="text-align: center; color: #64748b; font-size: 0.8rem; font-style: italic; padding: 0.5rem;">The Python logic and routing used to connect the OpenAI API to our strategy database.</p>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: center;">
+        <div>
+          <h4 style="font-size: 1.25rem; font-weight: 700; color: #0f172a; margin-bottom: 0.5rem;">Social Sentiment Demo</h4>
+          <p style="color: #475569; line-height: 1.7; font-size: 0.95rem;">This demonstration shows how the application pulls live data to provide immediate market feedback to the user.</p>
+        </div>
+        <div style="border-radius: 0.75rem; overflow: hidden; border: 1px solid #e2e8f0;">
+          <video autoplay muted loop playsinline style="width: 100%; display: block; cursor: zoom-in;">
+            <source src="../vid/socialdemo.mp4" type="video/mp4">
+          </video>
+          <p style="text-align: center; color: #64748b; font-size: 0.8rem; font-style: italic; padding: 0.5rem;">Demonstration of real-time sentiment scoring from live social media feeds.</p>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: center;">
+        <div style="order: 1;">
+          <h4 style="font-size: 1.25rem; font-weight: 700; color: #0f172a; margin-bottom: 0.5rem;">Social Sentiment Analysis Code</h4>
+          <p style="color: #475569; line-height: 1.7; font-size: 0.95rem;">I built a sentiment engine using NLTK's VADER library. It evaluates X (Twitter) posts to calculate sentiment scores, categorizing assets as Bullish, Bearish, or Neutral to help users make informed decisions.</p>
+        </div>
+        <div style="border-radius: 0.75rem; overflow: hidden; border: 1px solid #e2e8f0; order: 0;">
+          <img src="../img/socialcode.png" alt="Sentiment Analysis" style="width: 100%; display: block; cursor: zoom-in;">
+          <p style="text-align: center; color: #64748b; font-size: 0.8rem; font-style: italic; padding: 0.5rem;">The implementation of the VADER SentimentIntensityAnalyzer within our backend pipeline.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Back to projects -->
+    <div style="text-align: center; margin-top: 4rem;">
+      <a href="../index.html#projects" class="btn btn-primary">Back to Projects</a>
+    </div>
+
+  </main>
+
+  <!-- Lightbox Modal -->
+  <div id="image-modal" class="modal">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="expanded-image">
+    <div id="modal-caption"></div>
   </div>
-</nav>
 
-<main class="container" style="padding-top: 3rem; padding-bottom: 5rem;">
-
-  <!-- Back link (consistent with rental page) -->
-  <a href="../index.html#projects" style="display: inline-flex; align-items: center; gap: 0.4rem; color: #64748b; text-decoration: none; font-size: 0.9rem; font-weight: 600; margin-bottom: 2rem; transition: color 0.2s;" onmouseover="this.style.color='#2563eb'" onmouseout="this.style.color='#64748b'">
-    <i class="fas fa-arrow-left"></i> Back to Projects
-  </a>
-
-  <!-- Header -->
-  <div style="margin-bottom: 2.5rem;">
-    <span class="badge-style">Capstone Project | Team Lead</span>
-    <h1 class="section-title" style="margin-bottom: 0.75rem;">Algorithmic Trading Tool (Algotrade)</h1>
-    <p style="color: #475569; font-size: 1.05rem; line-height: 1.7; max-width: 700px; margin-bottom: 1.25rem;">
-      A trading web application that allows users to execute trades, access real-time stock and crypto tracking, and execute custom strategies.
-    </p>
-
-    <!-- Tech tags (consistent style with rental page) -->
-    <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;">
-      <span class="tech-tag">Python</span>
-      <span class="tech-tag">React</span>
-      <span class="tech-tag">Flask/FastAPI</span>
-      <span class="tech-tag">Node.js</span>
-      <span class="tech-tag">HTML/CSS</span>
-      <span class="tech-tag">JSON</span>
-      <span class="tech-tag">MongoDB</span>
-      <span class="tech-tag">OpenAI API</span>
+  <footer>
+    <div class="container">
+      <p>© 2026 Ethan Ly</p>
     </div>
+  </footer>
 
-  </div>
+  <script>
+    function setupLightbox() {
+      const modal = document.getElementById("image-modal");
+      const modalImg = document.getElementById("expanded-image");
+      const modalCaption = document.getElementById("modal-caption");
+      const closeModal = document.querySelector(".close-modal");
 
-  <!-- Hero image -->
-  <div style="margin: 2.5rem 0; border-radius: 1rem; overflow: hidden; border: 1px solid #e2e8f0; box-shadow: 0 4px 16px rgba(0,0,0,0.06);">
-    <img id="project-poster" src="../img/algotradeposter.png" alt="Algorithmic Trading Tool" style="width: 100%; display: block; cursor: zoom-in;">
-  </div>
+      let modalVideo = document.getElementById("expanded-video");
 
-  <!-- Summary boxes (consistent with rental page) -->
-  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 3rem 0;">
-    <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 1rem; padding: 1.75rem;">
-      <h3 style="display: flex; align-items: center; gap: 0.6rem; font-size: 1.15rem; font-weight: 700; margin-bottom: 0.75rem; color: #0f172a;">
-        <span style="display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 8px; background: #eef2ff; color: #2563eb; font-size: 1rem;"><i class="fas fa-circle-info"></i></span>
-        About the Project
-      </h3>
-      <p style="color: #475569; line-height: 1.7; font-size: 0.95rem;">This project is a trading web application that allows users to execute trades, as well as provide trade-related information and assistance. The project was completed in Agile method with weekly client meetings online. Features include real-time stock and crypto tracking and custom strategy execution.</p>
-    </div>
-    <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 1rem; padding: 1.75rem;">
-      <h3 style="display: flex; align-items: center; gap: 0.6rem; font-size: 1.15rem; font-weight: 700; margin-bottom: 0.75rem; color: #0f172a;">
-        <span style="display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 8px; background: #eef2ff; color: #2563eb; font-size: 1rem;"><i class="fas fa-user-tie"></i></span>
-        My Role
-      </h3>
-      <p style="color: #475569; line-height: 1.7; font-size: 0.95rem;">In this project I was chosen as the Project Leader for a team of five. Tasks include managing the team, communicating with client, and completing technical work. I primarily worked on the backend engineering the database, and adding features to the application.</p>
-    </div>
-  </div>
+      if (!modalVideo) {
+        modalVideo = document.createElement("video");
+        modalVideo.id = "expanded-video";
+        modalVideo.controls = true;
+        modalVideo.autoplay = true;
+        modalVideo.muted = false;
+        modalVideo.style.maxWidth = "90%";
+        modalVideo.style.maxHeight = "80vh";
+        modalVideo.style.display = "none";
+        modalImg.parentNode.insertBefore(modalVideo, modalImg);
+      }
 
-  <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 3rem 0;">
+      const openModal = (src, captionText) => {
+        modal.style.display = "flex";
 
-  <!-- Key Contributions -->
-  <h2 class="section-title" style="margin-bottom: 2.5rem;">Key Contributions</h2>
+        if (src.endsWith(".mp4")) {
+          modalImg.style.display = "none";
+          modalVideo.style.display = "block";
+          modalVideo.src = src;
+          modalVideo.play();
+        } else {
+          modalVideo.style.display = "none";
+          modalVideo.pause();
+          modalImg.style.display = "block";
+          modalImg.src = src;
+        }
 
-  <div style="display: flex; flex-direction: column; gap: 3rem;">
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: center;">
-      <div>
-        <h4 style="font-size: 1.25rem; font-weight: 700; color: #0f172a; margin-bottom: 0.5rem;">Database Schema & Implementation</h4>
-        <p style="color: #475569; line-height: 1.7; font-size: 0.95rem;">To support the trading logic, I implemented a non-relational schema that handles high-frequency data updates and user strategy storage efficiently.</p>
-      </div>
-      <div style="border-radius: 0.75rem; overflow: hidden; border: 1px solid #e2e8f0;">
-        <img src="../img/mongo.png" alt="Database Schema" style="width: 100%; display: block; cursor: zoom-in;">
-        <p style="text-align: center; color: #64748b; font-size: 0.8rem; font-style: italic; padding: 0.5rem;">A view of the MongoDB Atlas database structure and collections.</p>
-      </div>
-    </div>
-
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: center;">
-      <div style="order: 1;">
-        <h4 style="font-size: 1.25rem; font-weight: 700; color: #0f172a; margin-bottom: 0.5rem;">Database Engineering (Python & MongoDB)</h4>
-        <p style="color: #475569; line-height: 1.7; font-size: 0.95rem;">I designed the cloud-based database architecture using MongoDB Atlas. I developed a suite of Python functions for real-time data manipulation, routing, and rigorous testing to ensure data integrity during trades.</p>
-      </div>
-      <div style="border-radius: 0.75rem; overflow: hidden; border: 1px solid #e2e8f0; order: 0;">
-        <img src="../img/dbcode.png" alt="Database Engineering" style="width: 100%; display: block; cursor: zoom-in;">
-        <p style="text-align: center; color: #64748b; font-size: 0.8rem; font-style: italic; padding: 0.5rem;">Demo showing the AI Agent processing natural language prompts to manage trades.</p>
-      </div>
-    </div>
-
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: center;">
-      <div>
-        <h4 style="font-size: 1.25rem; font-weight: 700; color: #0f172a; margin-bottom: 0.5rem;">AI Agent Demonstration</h4>
-        <p style="color: #475569; line-height: 1.7; font-size: 0.95rem;">The AI Agent acts as an intermediary, allowing users to interact with complex trading strategies without needing to understand the underlying code.</p>
-      </div>
-      <div style="border-radius: 0.75rem; overflow: hidden; border: 1px solid #e2e8f0;">
-        <video autoplay muted loop playsinline style="width: 100%; display: block; cursor: zoom-in;">
-          <source src="../vid/aidemo.mp4" type="video/mp4">
-        </video>
-        <p style="text-align: center; color: #64748b; font-size: 0.8rem; font-style: italic; padding: 0.5rem;">The AI Agent in action, executing a user command via natural language.</p>
-      </div>
-    </div>
-
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: center;">
-      <div style="order: 1;">
-        <h4 style="font-size: 1.25rem; font-weight: 700; color: #0f172a; margin-bottom: 0.5rem;">AI Integration Logic</h4>
-        <p style="color: #475569; line-height: 1.7; font-size: 0.95rem;">I integrated the OpenAI API to allow users to manage trading strategies via natural language. Users can create, update, or delete strategies through simple prompts—a feature the client highlighted as their favorite.</p>
-      </div>
-      <div style="border-radius: 0.75rem; overflow: hidden; border: 1px solid #e2e8f0; order: 0;">
-        <img src="../img/aicode.png" alt="AI Integration" style="width: 100%; display: block; cursor: zoom-in;">
-        <p style="text-align: center; color: #64748b; font-size: 0.8rem; font-style: italic; padding: 0.5rem;">The Python logic and routing used to connect the OpenAI API to our strategy database.</p>
-      </div>
-    </div>
-
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: center;">
-      <div>
-        <h4 style="font-size: 1.25rem; font-weight: 700; color: #0f172a; margin-bottom: 0.5rem;">Social Sentiment Demo</h4>
-        <p style="color: #475569; line-height: 1.7; font-size: 0.95rem;">This demonstration shows how the application pulls live data to provide immediate market feedback to the user.</p>
-      </div>
-      <div style="border-radius: 0.75rem; overflow: hidden; border: 1px solid #e2e8f0;">
-        <video autoplay muted loop playsinline style="width: 100%; display: block; cursor: zoom-in;">
-          <source src="../vid/socialdemo.mp4" type="video/mp4">
-        </video>
-        <p style="text-align: center; color: #64748b; font-size: 0.8rem; font-style: italic; padding: 0.5rem;">Demonstration of real-time sentiment scoring from live social media feeds.</p>
-      </div>
-    </div>
-
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: center;">
-      <div style="order: 1;">
-        <h4 style="font-size: 1.25rem; font-weight: 700; color: #0f172a; margin-bottom: 0.5rem;">Social Sentiment Analysis Code</h4>
-        <p style="color: #475569; line-height: 1.7; font-size: 0.95rem;">I built a sentiment engine using NLTK's VADER library. It evaluates X (Twitter) posts to calculate sentiment scores, categorizing assets as Bullish, Bearish, or Neutral to help users make informed decisions.</p>
-      </div>
-      <div style="border-radius: 0.75rem; overflow: hidden; border: 1px solid #e2e8f0; order: 0;">
-        <img src="../img/socialcode.png" alt="Sentiment Analysis" style="width: 100%; display: block; cursor: zoom-in;">
-        <p style="text-align: center; color: #64748b; font-size: 0.8rem; font-style: italic; padding: 0.5rem;">The implementation of the VADER SentimentIntensityAnalyzer within our backend pipeline.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Back to projects -->
-  <div style="text-align: center; margin-top: 4rem;">
-    <a href="../index.html#projects" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Back to All Projects</a>
-  </div>
-
-</main>
-
-<!-- Lightbox Modal -->
-<div id="image-modal" class="modal">
-  <span class="close-modal">&times;</span>
-  <img class="modal-content" id="expanded-image">
-  <div id="modal-caption"></div>
-</div>
-
-<footer>
-  <div class="container">
-    <p>© 2026 Ethan Ly</p>
-  </div>
-</footer>
-
-<script>
-function setupLightbox() {
-  const modal = document.getElementById("image-modal");
-  const modalImg = document.getElementById("expanded-image");
-  const modalCaption = document.getElementById("modal-caption");
-  const closeModal = document.querySelector(".close-modal");
-
-  let modalVideo = document.getElementById("expanded-video");
-
-  if (!modalVideo) {
-    modalVideo = document.createElement("video");
-    modalVideo.id = "expanded-video";
-    modalVideo.controls = true;
-    modalVideo.autoplay = true;
-    modalVideo.muted = false;
-    modalVideo.style.maxWidth = "90%";
-    modalVideo.style.maxHeight = "80vh";
-    modalVideo.style.display = "none";
-    modalImg.parentNode.insertBefore(modalVideo, modalImg);
-  }
-
-  const openModal = (src, captionText) => {
-    modal.style.display = "flex";
-
-    if (src.endsWith(".mp4")) {
-      modalImg.style.display = "none";
-      modalVideo.style.display = "block";
-      modalVideo.src = src;
-      modalVideo.play();
-    } else {
-      modalVideo.style.display = "none";
-      modalVideo.pause();
-      modalImg.style.display = "block";
-      modalImg.src = src;
-    }
-
-    if (modalCaption) {
-      modalCaption.textContent = captionText || "";
-    }
-  };
-
-  const handleClose = () => {
-    modal.style.display = "none";
-    modalVideo.pause();
-    modalVideo.src = "";
-  };
-
-  closeModal.onclick = handleClose;
-
-  modal.onclick = (e) => {
-    if (e.target !== modalImg && e.target !== modalVideo) {
-      handleClose();
-    }
-  };
-
-  const heroImg = document.getElementById("project-poster");
-  if (heroImg) {
-    heroImg.onclick = () => openModal(heroImg.src, "Algorithmic Trading Tool (Algotrade)");
-  }
-
-  document.querySelectorAll("[style*='border-radius: 0.75rem']").forEach((container) => {
-    const media = container.querySelector("img, video");
-    const captionEl = container.querySelector("p");
-    const captionText = captionEl ? captionEl.textContent : "";
-
-    if (media) {
-      media.style.cursor = "zoom-in";
-      media.onclick = () => {
-        const src = media.tagName === "VIDEO" ? media.querySelector("source").src : media.src;
-        openModal(src, captionText);
+        if (modalCaption) {
+          modalCaption.textContent = captionText || "";
+        }
       };
-    }
-  });
-}
 
-setupLightbox();
-</script>
+      const handleClose = () => {
+        modal.style.display = "none";
+        modalVideo.pause();
+        modalVideo.src = "";
+      };
+
+      closeModal.onclick = handleClose;
+
+      modal.onclick = (e) => {
+        if (e.target !== modalImg && e.target !== modalVideo) {
+          handleClose();
+        }
+      };
+
+      const heroImg = document.getElementById("project-poster");
+      if (heroImg) {
+        heroImg.onclick = () => openModal(heroImg.src, "Algorithmic Trading Tool (Algotrade)");
+      }
+
+      document.querySelectorAll("[style*='border-radius: 0.75rem']").forEach((container) => {
+        const media = container.querySelector("img, video");
+        const captionEl = container.querySelector("p");
+        const captionText = captionEl ? captionEl.textContent : "";
+
+        if (media) {
+          media.style.cursor = "zoom-in";
+          media.onclick = () => {
+            const src = media.tagName === "VIDEO" ? media.querySelector("source").src : media.src;
+            openModal(src, captionText);
+          };
+        }
+      });
+    }
+
+    setupLightbox();
+  </script>
 </body>
 </html>
