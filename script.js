@@ -55,9 +55,9 @@ const projectsData = [
 ];
 
 const skillsData = [
-  { name: "MS Excel", icon: "fas fa-file-excel" },
-  { name: "MS Power BI", icon: "fas fa-chart-pie" },
-  { name: "Tableau", icon: "fas fa-chart-column" },
+  { name: "MS Excel", icon: "fas fa-file-excel", style: "color: #217346;" },
+  { name: "MS Power BI", icon: "fas fa-chart-simple", style: "color: #F2C811;" },
+  { name: "Tableau", icon: "fas fa-chart-column", style: "color: #1C4E80;" },
   { name: "Python", icon: "devicon-python-plain colored" },
   { name: "SQL, PL/SQL, PostgreSQL", icon: "devicon-postgresql-plain colored" },
   { name: "Pandas", icon: "devicon-pandas-plain colored" },
@@ -74,7 +74,6 @@ const skillsData = [
   { name: "FastAPI", icon: "devicon-fastapi-plain colored" },
   { name: "HTML5/CSS3", icon: "devicon-html5-plain colored" },
   { name: "REST APIs", icon: "fas fa-code" },
-  { name: "Axios", icon: "fas fa-exchange-alt" },
   { name: "Recharts", icon: "fas fa-chart-line" },
   { name: "Leaflet (Maps)", icon: "fas fa-map" },
   { name: "KNIME", icon: "fas fa-diagram-project" }
@@ -243,7 +242,7 @@ function renderSkills() {
     const skillDiv = document.createElement("div");
 
     skillDiv.className = "skill-card";
-    skillDiv.innerHTML = `<i class="${skill.icon}"></i> ${skill.name}`;
+    skillDiv.innerHTML = `<i class="${skill.icon}"${skill.style ? ` style="${skill.style}"` : ''}></i> ${skill.name}`;
 
     container.appendChild(skillDiv);
   });
