@@ -1,9 +1,9 @@
 const experienceData = [
   {
     title: "Junior Data Analyst",
-    company: "Urbis Ltd",
+    company: "Urbis",
     date: "July 2026 - Present",
-    desc: ["New to role."]
+    desc: [""]
   },
   {
     title: "Fresh Service/Convenience Team Member",
